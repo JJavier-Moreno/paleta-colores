@@ -41,7 +41,7 @@ Para utilizar este proyecto en tu máquina local, sigue estos pasos:
 
 `values.js` es una librería de JavaScript que permite trabajar con colores en formato hexadecimal. En este proyecto, se utiliza para generar diferentes tonos y saturaciones a partir de un color base.
 
-Para obtener más información sobre la librería, visita el [repositorio oficial](https://github.com/hexjs/values.js).
+Para obtener más información sobre la librería, visita el [repositorio oficial](https://noeldelgado.github.io/values.js/).
 
 ## 🖼️ Características
 
