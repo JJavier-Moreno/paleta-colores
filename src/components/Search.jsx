@@ -6,22 +6,26 @@ const Search = ({ setList }) => {
   const [color, setColor] = useState("blue");
   const [error, setError] = useState(false);
 
+  const isValidHex = (str) => /^#([0-9A-F]{3}){1,2}$/i.test(str);
+
   const onHandleChange = (e) => {
-    console.log(color);
     setColor(e.target.value);
+    setError(false);
   };
 
   const onHandleSubmit = (e) => {
     e.preventDefault();
 
-    const colores = new Values(color).all(10);
+    if (!isValidHex(color) || color.trim() === "") {
+      setError(true);
+    }
 
     try {
-      if (colores.length === 0 || color.trim() === "") {
-        setError(true);
-      }
+      const colores = new Values(color).all(10);
       setList(colores);
+      setError(false);
     } catch (error) {
+      console.log(error);
       setError(true);
     }
   };

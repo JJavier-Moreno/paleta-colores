@@ -185,3 +185,14 @@ h1 {
     font-size: 1.4rem;
   }
 }
+
+.error{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff5454;
+  color: white;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+}
